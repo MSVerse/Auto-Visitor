@@ -3,6 +3,8 @@ Auto-Visitor adalah sebuah tools sederhana yang digunakan untuk meningkatkan jum
 
 # Install
 ```
+pkg install git
+pkg install bc
 git clone https://github.com/MSVerse/Auto-Visitor
 cd Auto-Visitor
 chmod 777 Auto.sh
