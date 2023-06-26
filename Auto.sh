@@ -16,9 +16,9 @@ echo ""
 
 for ((i=1; i<max+1; i++))
 do
-  result=$(curl -s -L -A "$(shuf -n 1 user-agents.txt)" -e "$(shuf -n 1 referers.txt)" $url)
-  echo "[$i] VISITORS SENT FROM ($result)"
-  sleep $(bc <<< "scale=3; $delay/1000")
+  result=$(curl -s -L -A "$(shuf -n 1 user-agents.txt)" -e "$(shuf -n 1 referers.txt)" "$url")
+  echo "[$i] VISITORS SENT"
+  sleep "$(echo "$delay/1000" | bc -l)"
 done
 
 echo ""
